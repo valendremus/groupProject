@@ -6,7 +6,7 @@ private String enclosure;
 
 //constructors
 public zooAnimal(){
-  animalName = "No name inputted.";
+  animalName = "Name of the animal is unknown.";
   animalNum = 0;
   enclosure = "No enclosure specified.";
   
