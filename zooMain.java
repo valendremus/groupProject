@@ -14,7 +14,7 @@ zooFood acaciaLeaves = new zooFood("Acacia Leaves", 50);
 zooAnimal giraffe = new zooAnimal("Giraffe", 4, "Safari", acaciaLeaves);
   
 zooFood hay = new zooFood("hay", 50);
-zooAnimal elephan = new zooAnimal("Elephant", 5, "Safari", hay);
+zooAnimal elephant = new zooAnimal("Elephant", 5, "Safari", hay);
 //zoo animal array
 //animal search function
 }
