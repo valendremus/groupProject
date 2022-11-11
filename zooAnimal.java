@@ -39,7 +39,7 @@ public int getAnimalNum(){
 public String getEnclosure(){
   return this.enclosure;
 }
-
+//printinfo method to print out all zooAnimal information other than food
 public void PrintInfo(){
   System.out.println("Animal: " + getAnimalName());
   System.out.println("Number of " + getAnimalName() + "s: " + getAnimalNum());
