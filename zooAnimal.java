@@ -3,18 +3,19 @@ public class zooAnimal {
 private String animalName;
 private int animalNum;
 private String enclosure;
-private zooFood food;
 
 //constructors
 public zooAnimal(){
   animalName = "No name inputted.";
   animalNum = 0;
   enclosure = "No enclosure specified.";
+  
 }
-public zooAnimal(String name, int num, String enc){
+public zooAnimal(String name, int num, String enc, zooFood food){
   animalName = name;
   animalNum = num;
   enclosure = enc;
+  
 }
   
 //setter methods
@@ -39,6 +40,10 @@ public String getEnclosure(){
   return this.enclosure;
 }
 
-//get foodName (maybe in zooFood)
-//get foodNum (maybe in zooFood)
+public void PrintInfo(){
+  System.out.println("Animal: " + getAnimalName());
+  System.out.println("Number of " + getAnimalName() + "s: " + getAnimalNum());
+  System.out.println("Enclosure Name: " + getEnclosure());
+}
+
 }
