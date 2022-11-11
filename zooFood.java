@@ -10,11 +10,11 @@ public zooFood(String nfoodName, int nfoodNum)
 }
 public String getFoodName()
 {
-  return foodName;
+  return this.foodName;
 }
 public int getFoodNum()
 {
-  return foodNum;
+  return this.foodNum;
 }
 
 }
