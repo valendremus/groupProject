@@ -36,6 +36,7 @@ public class zooMammal extends zooAnimal{
 	//prints out all information about the animal, including information in zooAnimal
 	public void printInfo(){
 		zooAnimal.printInfo();
+		System.out.println(getAnimalName() + " is a mammal!");
 		System.out.println("Does this mammal have fur?: " + hasFur(fur));
 		System.out.println("Color(s): " + this.colors);
 		System.out.println("Does this mammal have a tail?: " + hasTail(tail));
