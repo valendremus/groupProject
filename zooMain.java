@@ -46,7 +46,7 @@ public class zooMain {
     		  System.out.println("This is a Tiger!");
     		  while(userNum != 6) {
     		  System.out.println("What would you like to do next?");
-    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
     		  userNum = scnr.nextInt();
     		  	if(userNum == 1)
     		  	{
@@ -83,7 +83,7 @@ public class zooMain {
     		  System.out.println("This is a Panda!");
     		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -120,7 +120,7 @@ public class zooMain {
     		  System.out.println("This is a Penguin!");
     		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -157,7 +157,7 @@ public class zooMain {
     		  System.out.println("This is a Toucan!");
     		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -194,7 +194,7 @@ public class zooMain {
     		  System.out.println("This is a Blue Tang!");
     		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -231,7 +231,7 @@ public class zooMain {
     		  System.out.println("This is a Clownfish!");
     		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. search new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
