@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 public class zooMain {
   public static void main(String[] args) {
@@ -12,19 +11,21 @@ public class zooMain {
     zooMammal panda = new zooMammal("Panda", 2, "Forest", bamboo, true, "Black and White", true, "Herbivore");
   
     zooFood fish = new zooFood("fish", 50);
+    zooFood fruit = new zooFood("fruit", 50);
     zooBird penguin = new zooBird("Penguin", 20, "Artic", fish, "Black and White", false, "Carnivore");
-  
+    zooBird toucan = new zooBird("Toucan", 3, "Jungle", fruit, "Oragne, Black, White, and Blue", true, "Omnivore");
+    
     zooFood fishFood = new zooFood("Fishfood", 50);
     zooFish clownFish = new zooFish("Clownfish", 4, "Aquarium", fishFood, "Orange, White, and Black", "Omnivore", 6, "Small");
-    zooFish blueTang = new zooFish("Blue Tang", "Aquarium", fisihFood, “Blue, Black, and Yellow”, “Omnivore”, 5, “Small”);
+    zooFish blueTang = new zooFish("Blue Tang", 5, "Aquarium", fishFood, "Blue, Black, and Yellow", "Omnivore", 5, "Small");
     
     zooAnimal[][] anArray = new zooAnimal[2][3];
     anArray[0][0] = tiger;
-    anArray[0][1] = panda;
-    anArray[1][0] = penguin;
+    anArray[0][0] = panda;
+    anArray[0][1] = penguin;
     anArray[1][1] = toucan;
-    anArray[2][0] = blueTang;
-    anArray[2][1] = clownFish;
+    anArray[1][2] = blueTang;
+    anArray[1][2] = clownFish;
     
     zooFood[] foArray = new zooFood[4];
     foArray[0] = beef;
@@ -34,17 +35,18 @@ public class zooMain {
     
     while(userNum != 7)
     	{
-    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6");
+    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6)");
+    	System.out.println("Input 7 to exit the program");
     	userNum = scnr.nextInt();
-    	if(userNum > 0 & userNum < 7)
+    	if(userNum > 0 & userNum < 8)
     	{
     	switch (userNum) {
     	  case 1:
     		  userNum = 0;
     		  System.out.println("This is a Tiger!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
     		  System.out.println("What would you like to do next?");
-    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left" + "5. exit");
     		  userNum = scnr.nextInt();
     		  	if(userNum == 1)
     		  	{
@@ -60,6 +62,10 @@ public class zooMain {
     		  	}
     		  	else if(userNum == 4)
     		  	{
+    		  		System.out.println(beef.getFoodName());
+    		  	}
+    		  	else if(userNum == 5)
+    		  	{
     		  		break;
     		  	}
     		  	else
@@ -71,9 +77,9 @@ public class zooMain {
     	  case 2:
     		  userNum = 0;
     		  System.out.println("This is a Panda!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -89,6 +95,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 4)
         		  	{
+        		  		System.out.println(bamboo.getFoodName());
+        		  	}
+        		  	else if(userNum == 5)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -100,9 +110,9 @@ public class zooMain {
     	  case 3:
     		  userNum = 0;
     		  System.out.println("This is a Penguin!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -118,6 +128,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 4)
         		  	{
+        		  		System.out.println(fish.getFoodName());
+        		  	}
+        		  	else if(userNum == 5)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -129,9 +143,9 @@ public class zooMain {
     	  case 4:
     		  userNum = 0;
     		  System.out.println("This is a Toucan!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -147,6 +161,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 4)
         		  	{
+        		  		System.out.println(fishFood.getFoodName());
+        		  	}
+        		  	else if(userNum == 5)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -158,9 +176,9 @@ public class zooMain {
     	  case 5:
     		  userNum = 0;
     		  System.out.println("This is a Blue Tang!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -176,6 +194,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 4)
         		  	{
+        		  		System.out.println(beef.getFoodName());
+        		  	}
+        		  	else if(userNum == 5)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -187,9 +209,9 @@ public class zooMain {
     	  case 6:
     		  userNum = 0;
     		  System.out.println("This is a Clownfish!");
-    		  while(userNum != 4) {
+    		  while(userNum != 5) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -204,6 +226,10 @@ public class zooMain {
         		  		System.out.println(fishFood.getFoodNum());
         		  	}
         		  	else if(userNum == 4)
+        		  	{
+        		  		System.out.println(fishFood.getFoodName());
+        		  	}
+        		  	else if(userNum == 5)
         		  	{
         		  		break;
         		  	}
@@ -228,6 +254,7 @@ public class zooMain {
     		System.out.println("This is not a valid number, try again.");
     	}
     	}
+    System.out.println("Thank you for using our program!");
     	
   }
 }
