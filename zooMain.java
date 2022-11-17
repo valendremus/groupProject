@@ -227,6 +227,11 @@ public class zooMain {
     	//what food
     	//exit
     	}
+    	else
+    	{
+    		System.out.println("This is not a valid number, try again.");
     	}
+    	}
+    	
   }
 }
