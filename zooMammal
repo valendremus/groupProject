@@ -1,0 +1,43 @@
+public class zooMammal extends zooAnimal{
+	//fields
+	private boolean fur;
+	private String colors;
+	private boolean tail;
+	private String eatingType;
+	
+	//constructor
+	public zooMammal(String n, int num, String enc, zooFood food, 
+					boolean f, String clr, boolean t, String eat){
+		super(n, num, enc, food);
+		fur = f;
+		colors = clr;
+		tail = t;
+		eatingType = eat;
+	}
+	
+	public String hasFur(boolean b){
+		if (b = true){
+			return "Yes!";
+		}else{
+			return "No.";
+		}
+	}
+	
+	public String hasTail(boolean t){
+		if (t = true){
+			return "Yes!";
+		}else{
+			return "No.";
+		}
+	}
+	
+	public void printInfo(){
+		zooAnimal.printInfo();
+		System.out.println("Does this mammal have fur?: " + hasFur(fur));
+		System.out.println("Color(s): " + this.colors);
+		System.out.println("Does this mammal have a tail?: " + hasTail(tail));
+		System.out.println("Eating habit: " + this.eatingType);
+		
+	}
+	
+}
