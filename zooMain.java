@@ -13,9 +13,9 @@ public class zooMain {
   
     zooFood acaciaLeaves = new zooFood("Acacia Leaves", 50);
     zooAnimal giraffe = new zooAnimal("Giraffe", 4, "Safari", acaciaLeaves);
-  
-    zooFood hay = new zooFood("hay", 50);
-    zooAnimal elephant = new zooAnimal("Elephant", 5, "Safari", hay);
+    
+    zooFood fishFood = new zooFood("fishFood", 50);
+    zooAnimal clownfish = new zooAnimal("Clownfish", 4, "Aquarium", fishFood);
     //zoo animal array
     //animal search function
   }
