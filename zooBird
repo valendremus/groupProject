@@ -24,6 +24,7 @@ public class zooBird extends zooAnimal{
 	//prints out all information about the animal, including info from zooAnimal
 	public void printInfo(){
 		zooAnimal.printInfo();
+		System.out.println(getAnimalName() + " is a bird!");
 		System.out.println("Color(s): " + this.colors);
 		System.out.println("Can this bird fly?: " + canFly(fly));
 		System.out.println("Eating habit: " + this.eatingType);
