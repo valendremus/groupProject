@@ -266,12 +266,6 @@ public class zooMain {
     	  case 7:
     	  	break;
     	 }
-    //animal search function
-    	//look for animal
-    	//how many of animal
-    	//which enclosure
-    	//what food
-    	//exit
     	}
     	else
     	{
