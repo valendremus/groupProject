@@ -15,6 +15,7 @@ public class zooMammal extends zooAnimal{
 		eatingType = eat;
 	}
 	
+	//determines if the mammal has fur
 	public String hasFur(boolean b){
 		if (b = true){
 			return "Yes!";
@@ -23,6 +24,7 @@ public class zooMammal extends zooAnimal{
 		}
 	}
 	
+	//determines if the mammal has a tail
 	public String hasTail(boolean t){
 		if (t = true){
 			return "Yes!";
@@ -31,6 +33,7 @@ public class zooMammal extends zooAnimal{
 		}
 	}
 	
+	//prints out all information about the animal, including information in zooAnimal
 	public void printInfo(){
 		zooAnimal.printInfo();
 		System.out.println("Does this mammal have fur?: " + hasFur(fur));
