@@ -1,3 +1,31 @@
-public class zooBired extends zooAnimal{
+public class zooBird extends zooAnimal{
+	//fields
+	private String colors;
+	private boolean fly;
+	private String eatingType;
 	
+	//constructor
+	public zooBird(String name, int num, String enc, zooFood food, String clr, boolean f, String eat){
+		super(name, num, enc, food);
+		colors = clr;
+		fly = f;
+		eatingType = eat;
+	}
+	
+	//determines if the bird can fly or not
+	public String canFly(boolean f){
+		if (f = true){
+			return "Yes!";
+		}else{
+			return "No.";
+		}
+	}
+	
+	//prints out all information about the animal, including info from zooAnimal
+	public void printInfo(){
+		zooAnimal.printInfo();
+		System.out.println("Color(s): " + this.colors);
+		System.out.println("Can this bird fly?: " + canFly(fly));
+		System.out.println("Eating habit: " + this.eatingType);
+	}
 }
