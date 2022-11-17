@@ -24,6 +24,13 @@ public class zooMain {
     anArray[1][1] = polarBear;
     anArray[2][0] = giraffe;
     anArray[2][1] = clownFish;
+    
+    zooFood[] foArray = new zooFood[5];
+    foArray[0] = beef;
+    foArray[1] = bamboo;
+    foArray[2] = fish;
+    foArray[3] = acaciaLeaves;
+    foArray[4] = fishFood;
     //animal search function
   }
 }
