@@ -6,20 +6,17 @@ public class zooMain {
 	int userNum = 0;
 	  
     zooFood beef = new zooFood("beef", 50);
-    zooAnimal tiger = new zooAnimal("Tiger", 6, "Jungle", beef);
+    zooMammal tiger = new zooMammal("Tiger", 6, "Jungle", beef, true, "Orange and Black", true, "Carnivore");
   
     zooFood bamboo = new zooFood("bamboo", 50);
-    zooAnimal panda = new zooAnimal("Panda", 2, "Forest", bamboo);
+    zooMammal panda = new zooMammal("Panda", 2, "Forest", bamboo, true, "Black and White", true, "Herbivore");
   
     zooFood fish = new zooFood("fish", 50);
-    zooAnimal penguin = new zooAnimal("Penguin", 20, "Artic", fish);
-    zooAnimal polarBear = new zooAnimal("Polar Bear", 2, "Artic", fish);
-  
-    zooFood acaciaLeaves = new zooFood("Acacia Leaves", 50);
-    zooAnimal giraffe = new zooAnimal("Giraffe", 4, "Safari", acaciaLeaves);
+    zooBird penguin = new zooBird("Penguin", 20, "Artic", fish, "Black and White", false, "Carnivore");
   
     zooFood fishFood = new zooFood("Fishfood", 50);
-    zooAnimal clownFish = new zooAnimal("Clownfish", 4, "Aquarium", fishFood);
+    zooFish clownFish = new zooFish("Clownfish", 4, "Aquarium", fishFood, "Orange, White, and Black", "Omnivore", 6, "Small");
+    zooFish blueTang = new zooFish("Blue Tang", "Aquarium", fisihFood, “Blue, Black, and Yellow”, “Omnivore”, 5, “Small”);
     
     zooAnimal[][] anArray = new zooAnimal[2][3];
     anArray[0][0] = tiger;
@@ -29,12 +26,11 @@ public class zooMain {
     anArray[2][0] = blueTang;
     anArray[2][1] = clownFish;
     
-    zooFood[] foArray = new zooFood[5];
+    zooFood[] foArray = new zooFood[4];
     foArray[0] = beef;
     foArray[1] = bamboo;
     foArray[2] = fish;
-    foArray[3] = acaciaLeaves;
-    foArray[4] = fishFood;
+    foArray[3] = fishFood;
     
     while(userNum != 7)
     	{
