@@ -13,10 +13,17 @@ public class zooMain {
   
     zooFood acaciaLeaves = new zooFood("Acacia Leaves", 50);
     zooAnimal giraffe = new zooAnimal("Giraffe", 4, "Safari", acaciaLeaves);
+  
+    zooFood fishFood = new zooFood("Fishfood", 50);
+    zooAnimal clownFish = new zooAnimal("Clownfish", 4, "Aquarium", fishFood);
     
-    zooFood fishFood = new zooFood("fishFood", 50);
-    zooAnimal clownfish = new zooAnimal("Clownfish", 4, "Aquarium", fishFood);
-    //zoo animal array
+    zooAnimal[][] anArray = new zooAnimal[2][3];
+    anArray[0][0] = tiger;
+    anArray[0][1] = panda;
+    anArray[1][0] = penguin;
+    anArray[1][1] = polarBear;
+    anArray[2][0] = giraffe;
+    anArray[2][1] = clownFish;
     //animal search function
   }
 }
