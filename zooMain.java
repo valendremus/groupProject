@@ -44,9 +44,9 @@ public class zooMain {
     	  case 1:
     		  userNum = 0;
     		  System.out.println("This is a Tiger!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
     		  System.out.println("What would you like to do next?");
-    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left" + "5. exit");
+    		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
     		  userNum = scnr.nextInt();
     		  	if(userNum == 1)
     		  	{
@@ -66,6 +66,10 @@ public class zooMain {
     		  	}
     		  	else if(userNum == 5)
     		  	{
+    		  		System.out.println("Another mammal we have is the Panda!");
+    		  	}
+    		  	else if(userNum == 6)
+    		  	{
     		  		break;
     		  	}
     		  	else
@@ -77,9 +81,9 @@ public class zooMain {
     	  case 2:
     		  userNum = 0;
     		  System.out.println("This is a Panda!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -99,6 +103,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 5)
         		  	{
+        		  		System.out.println("Another mammal we have is the Tiger!");
+        		  	}
+        		  	else if(userNum == 6)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -110,9 +118,9 @@ public class zooMain {
     	  case 3:
     		  userNum = 0;
     		  System.out.println("This is a Penguin!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -132,6 +140,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 5)
         		  	{
+        		  		System.out.println("Another bird we have is the Toucan!");
+        		  	}
+        		  	else if(userNum == 6)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -143,9 +155,9 @@ public class zooMain {
     	  case 4:
     		  userNum = 0;
     		  System.out.println("This is a Toucan!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -165,6 +177,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 5)
         		  	{
+        		  		System.out.println("Another bird we have is the Penguin!");
+        		  	}
+        		  	else if(userNum == 6)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -176,9 +192,9 @@ public class zooMain {
     	  case 5:
     		  userNum = 0;
     		  System.out.println("This is a Blue Tang!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -198,6 +214,10 @@ public class zooMain {
         		  	}
         		  	else if(userNum == 5)
         		  	{
+        		  		System.out.println("Another fish we have is the ClownFish!");
+        		  	}
+        		  	else if(userNum == 6)
+        		  	{
         		  		break;
         		  	}
         		  	else
@@ -209,9 +229,9 @@ public class zooMain {
     	  case 6:
     		  userNum = 0;
     		  System.out.println("This is a Clownfish!");
-    		  while(userNum != 5) {
+    		  while(userNum != 6) {
         		  System.out.println("What would you like to do next?");
-        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" +  "4. check how much food is left\n" + "5. search for new animal");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. check how much food is left\n" + "5. search related animals\n" + "6. exit");
         		  userNum = scnr.nextInt();
         		  	if(userNum == 1)
         		  	{
@@ -230,6 +250,10 @@ public class zooMain {
         		  		System.out.println(fishFood.getFoodName());
         		  	}
         		  	else if(userNum == 5)
+        		  	{
+        		  		System.out.println("Another fish we have is the Blue tang!");
+        		  	}
+        		  	else if(userNum == 6)
         		  	{
         		  		break;
         		  	}
@@ -255,6 +279,6 @@ public class zooMain {
     	}
     	}
     System.out.println("Thank you for using our program!");
-    	
+    scnr.close();
   }
 }
