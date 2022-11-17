@@ -40,6 +40,8 @@ public class zooMain {
     	{
     	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6");
     	userNum = scnr.nextInt();
+    	if(userNum > 0 & userNum < 7)
+    	{
     	switch (userNum) {
     	  case 1:
     		  userNum = 0;
@@ -224,6 +226,7 @@ public class zooMain {
     	//which enclosure
     	//what food
     	//exit
+    	}
     	}
   }
 }
