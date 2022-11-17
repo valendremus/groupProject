@@ -1,3 +1,27 @@
 public class zooFish extends zooAnimal{
+	//fields
+	private String colors;
+	prvate String eatingType;
+	private int fins;
+	private String size;
+	
+	//constructor
+	public zooFish(String name, int num, String enc, zooFood food, String clr, String eat, int f, String sz){
+		super(name, num, enc, food);
+		colors = clr;
+		eatingType = eat;
+		fins = f;
+		size = sz;
+	}
+	
+	//prints out all information about the animal, including information from zooAnimal
+	public void printInfo(){
+		zooAnimal.printInfo();
+		System.out.println(getAnimalName() + " is a fish!");
+		System.out.println("Color(s): " + this.colors);
+		System.out.println("Eating habits: " + this.eatingType);
+		System.out.println("Number of fins: " + this.fins);
+		System.out.println("Size category: " + this.size);
+	}
 	
 }
