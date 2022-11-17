@@ -38,7 +38,7 @@ public class zooMain {
     
     while(userNum != 7)
     	{
-    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6");
+    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6)");
     	userNum = scnr.nextInt();
     	switch (userNum) {
     	  case 1:
