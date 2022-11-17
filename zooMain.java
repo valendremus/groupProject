@@ -25,8 +25,8 @@ public class zooMain {
     anArray[0][0] = tiger;
     anArray[0][1] = panda;
     anArray[1][0] = penguin;
-    anArray[1][1] = polarBear;
-    anArray[2][0] = giraffe;
+    anArray[1][1] = toucan;
+    anArray[2][0] = blueTang;
     anArray[2][1] = clownFish;
     
     zooFood[] foArray = new zooFood[5];
@@ -38,7 +38,7 @@ public class zooMain {
     
     while(userNum != 7)
     	{
-    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6)");
+    	System.out.println("What animal would you like to choose? (choose a number betwen 1 - 6");
     	userNum = scnr.nextInt();
     	switch (userNum) {
     	  case 1:
@@ -58,7 +58,7 @@ public class zooMain {
     		  	}
     		  	else if(userNum == 3)
     		  	{
-    		  		
+    		  		System.out.println(beef.getFoodNum());
     		  	}
     		  	else if(userNum == 4)
     		  	{
@@ -69,22 +69,151 @@ public class zooMain {
     		  		System.out.println("You entered an invalid number, try again.");
     		  	}
     		  }
-    		  
     	    break;
     	  case 2:
+    		  userNum = 0;
     		  System.out.println("This is a Panda!");
+    		  while(userNum != 4) {
+        		  System.out.println("What would you like to do next?");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  userNum = scnr.nextInt();
+        		  	if(userNum == 1)
+        		  	{
+        		  		System.out.println(panda.getAnimalNum());
+        		  	}
+        		  	else if(userNum == 2)
+        		  	{
+        		  		System.out.println(panda.getEnclosure());
+        		  	}
+        		  	else if(userNum == 3)
+        		  	{
+        		  		System.out.println(bamboo.getFoodNum());
+        		  	}
+        		  	else if(userNum == 4)
+        		  	{
+        		  		break;
+        		  	}
+        		  	else
+        		  	{
+        		  		System.out.println("You entered an invalid number, try again.");
+        		  	}
+        		  }
     	    break;
     	  case 3:
+    		  userNum = 0;
     		  System.out.println("This is a Penguin!");
+    		  while(userNum != 4) {
+        		  System.out.println("What would you like to do next?");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  userNum = scnr.nextInt();
+        		  	if(userNum == 1)
+        		  	{
+        		  		System.out.println(penguin.getAnimalNum());
+        		  	}
+        		  	else if(userNum == 2)
+        		  	{
+        		  		System.out.println(penguin.getEnclosure());
+        		  	}
+        		  	else if(userNum == 3)
+        		  	{
+        		  		System.out.println(fish.getFoodNum());
+        		  	}
+        		  	else if(userNum == 4)
+        		  	{
+        		  		break;
+        		  	}
+        		  	else
+        		  	{
+        		  		System.out.println("You entered an invalid number, try again.");
+        		  	}
+        		  }
     	    break;
     	  case 4:
-    		  System.out.println("This is a Polar bear!");
+    		  userNum = 0;
+    		  System.out.println("This is a Toucan!");
+    		  while(userNum != 4) {
+        		  System.out.println("What would you like to do next?");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  userNum = scnr.nextInt();
+        		  	if(userNum == 1)
+        		  	{
+        		  		System.out.println(toucan.getAnimalNum());
+        		  	}
+        		  	else if(userNum == 2)
+        		  	{
+        		  		System.out.println(toucan.getEnclosure());
+        		  	}
+        		  	else if(userNum == 3)
+        		  	{
+        		  		System.out.println(fishFood.getFoodNum());
+        		  	}
+        		  	else if(userNum == 4)
+        		  	{
+        		  		break;
+        		  	}
+        		  	else
+        		  	{
+        		  		System.out.println("You entered an invalid number, try again.");
+        		  	}
+        		  }
     	    break;
     	  case 5:
-    		  System.out.println("This is a Giraffe!");
+    		  userNum = 0;
+    		  System.out.println("This is a Blue Tang!");
+    		  while(userNum != 4) {
+        		  System.out.println("What would you like to do next?");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  userNum = scnr.nextInt();
+        		  	if(userNum == 1)
+        		  	{
+        		  		System.out.println(blueTang.getAnimalNum());
+        		  	}
+        		  	else if(userNum == 2)
+        		  	{
+        		  		System.out.println(blueTang.getEnclosure());
+        		  	}
+        		  	else if(userNum == 3)
+        		  	{
+        		  		System.out.println(beef.getFoodNum());
+        		  	}
+        		  	else if(userNum == 4)
+        		  	{
+        		  		break;
+        		  	}
+        		  	else
+        		  	{
+        		  		System.out.println("You entered an invalid number, try again.");
+        		  	}
+        		  }
     	    break;
     	  case 6:
+    		  userNum = 0;
     		  System.out.println("This is a Clownfish!");
+    		  while(userNum != 4) {
+        		  System.out.println("What would you like to do next?");
+        		  System.out.println("1. Check number of animals\n" + "2. check Which enclosure\n" + "3. Check what food is eaten\n" + "4. search for new animal");
+        		  userNum = scnr.nextInt();
+        		  	if(userNum == 1)
+        		  	{
+        		  		System.out.println(clownFish.getAnimalNum());
+        		  	}
+        		  	else if(userNum == 2)
+        		  	{
+        		  		System.out.println(clownFish.getEnclosure());
+        		  	}
+        		  	else if(userNum == 3)
+        		  	{
+        		  		System.out.println(fishFood.getFoodNum());
+        		  	}
+        		  	else if(userNum == 4)
+        		  	{
+        		  		break;
+        		  	}
+        		  	else
+        		  	{
+        		  		System.out.println("You entered an invalid number, try again.");
+        		  	}
+        		  }
       	    break;
     	  case 7:
     	  	break;
