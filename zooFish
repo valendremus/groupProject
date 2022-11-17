@@ -1,7 +1,7 @@
 public class zooFish extends zooAnimal{
 	//fields
 	private String colors;
-	prvate String eatingType;
+	private String eatingType;
 	private int fins;
 	private String size;
 	
